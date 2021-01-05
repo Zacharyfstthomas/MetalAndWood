@@ -18,6 +18,14 @@ public class Design {
 		
 	}
 
+	public String getProductTitle() {
+		return ProductTitle;
+	}
+
+	public String getSKUs() {
+		return SKUs;
+	}
+
 	public void setProductTitle(String productTitle) {
 		ProductTitle = productTitle;
 	}
@@ -46,7 +54,10 @@ public class Design {
 		MainDesc = mainDesc;
 	} 
 	
-	
+	 public String toString() {
+		 
+		 return ProductTitle + "," + GroupID + "," + SKUs + "," + SalesPrice + "," +SalesDesc + "," +  PhysicalItem+ "," + MainDesc;
+	 }
 
 	
 	
